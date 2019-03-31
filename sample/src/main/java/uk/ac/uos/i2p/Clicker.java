@@ -32,16 +32,4 @@ public class Clicker {
 	public boolean isZero() {
 		return value == 0;
 	}
-
-	static void checkMagic(Clicker clicker) {
-		for (int i = 0; i < Main.magic.length(); ++i) {
-			checkForA(clicker, i);
-		}
-	}
-
-	static void checkForA(Clicker clicker, int i) {
-		if (Main.magic.charAt(i) == 'a') {
-			clicker.click();
-		}
-	}
 }
